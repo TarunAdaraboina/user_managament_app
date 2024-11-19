@@ -6,20 +6,21 @@
   margin: 0 auto 20px;
 }
 
-.user-form input {
+.input-name {
   flex: 1 1 100%;
   padding: 10px;
   font-size: 16px;
   border-color: #555;
 }
 
-.user-form button {
+.submit-button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #037207;
   color: white;
   border: none;
   cursor: pointer;
+  max-width: 60%;
 }
 
 .user-form button:disabled {
@@ -27,19 +28,21 @@
   cursor: not-allowed;
 }
 
-.dark-mode .user-form input,
-.dark-mode .user-form button {
+.dark-mode .user-form .input-name,
+.dark-mode .submit-button{
+  
   background-color: #333;
   color: white;
   
 }
 
 @media (min-width: 768px) {
-  .user-form input {
+  .user-form .input-name {
     flex: 1 1;
   }
 
-  .user-form button {
+  .submit-button {
     flex: 1 1 100%;
+    max-width: 40%;
   }
 }

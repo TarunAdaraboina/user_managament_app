@@ -8,6 +8,7 @@ const UserForm = ({ currentUser, handleChange, handleSubmit, isEditing, isDarkMo
       onSubmit={handleSubmit}
     >
       <input
+        className ='input-name'
         type="text"
         name="firstName"
         value={currentUser.firstName || ''}
@@ -16,6 +17,7 @@ const UserForm = ({ currentUser, handleChange, handleSubmit, isEditing, isDarkMo
         required
       />
       <input
+        className ='input-name'
         type="text"
         name="lastName"
         value={currentUser.lastName || ''}
@@ -24,6 +26,7 @@ const UserForm = ({ currentUser, handleChange, handleSubmit, isEditing, isDarkMo
         required
       />
       <input
+        className ='input-name'
         type="email"
         name="email"
         value={currentUser.email || ''}
@@ -32,6 +35,7 @@ const UserForm = ({ currentUser, handleChange, handleSubmit, isEditing, isDarkMo
         required
       />
       <input
+        className ='input-name'
         type="text"
         name="department"
         value={currentUser.department || ''}
@@ -39,7 +43,7 @@ const UserForm = ({ currentUser, handleChange, handleSubmit, isEditing, isDarkMo
         onChange={handleChange}
         required
       />
-      <button type="submit" disabled={!currentUser.firstName || !currentUser.lastName || !currentUser.email || !currentUser.department}>
+      <button className='submit-button' type="submit" disabled={!currentUser.firstName || !currentUser.lastName || !currentUser.email || !currentUser.department}>
         {isEditing ? 'Save User' : 'Add User'}
       </button>
     </form>
