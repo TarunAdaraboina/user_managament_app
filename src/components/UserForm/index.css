@@ -1,0 +1,45 @@
+.user-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.user-form input {
+  flex: 1 1 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-color: #555;
+}
+
+.user-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #037207;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.user-form button:disabled {
+  background-color: #3faa43;
+  cursor: not-allowed;
+}
+
+.dark-mode .user-form input,
+.dark-mode .user-form button {
+  background-color: #333;
+  color: white;
+  
+}
+
+@media (min-width: 768px) {
+  .user-form input {
+    flex: 1 1;
+  }
+
+  .user-form button {
+    flex: 1 1 100%;
+  }
+}
